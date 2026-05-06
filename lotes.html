@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lotes - App Café</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <script src="js/firebase.js"></script>
+</head>
+
+<body>
+
+  <h1>Lotes</h1>
+
+  <button id="btnExcel">Exportar a Excel</button>
+
+  <section>
+    <h2>Agregar / Editar Lote</h2>
+
+    <form id="formLotes">
+      <label>
+        ID del lote (ej: L-001):
+        <input type="text" id="loteId" required>
+      </label><br><br>
+
+      <label>
+        Estado:
+        <select id="estado" required>
+          <option value="Cereza">Cereza</option>
+          <option value="Miel">Miel</option>
+          <option value="Pergamino">Pergamino</option>
+          <option value="Verde">Verde</option>
+        </select>
+      </label><br><br>
+
+      <label>
+        Peso (kg):
+        <input type="number" id="peso" required>
+      </label><br><br>
+
+      <label>
+        Humedad (%):
+        <input type="number" id="humedad" required>
+      </label><br><br>
+
+      <label>
+        Fecha:
+        <input type="date" id="fecha" required>
+      </label><br><br>
+
+      <input type="hidden" id="docEditId">
+
+      <button type="submit" id="btnGuardar">Guardar</button>
+      <button type="button" id="btnCancelarEdicion" style="display:none;">Cancelar edición</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Listado de Lotes</h2>
+    <div id="lotes-list"></div>
+  </section>
+
+  <script src="js/lotes.js"></script>
+  <script src="js/menu.js"></script>
+
+</body>
+</html>

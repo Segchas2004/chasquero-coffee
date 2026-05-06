@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenido - Chasquero Coffee</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .landing {
+      text-align: center;
+      margin-top: 80px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .landing h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .landing p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .landing button {
+      padding: 12px 20px;
+      background: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .landing button:hover {
+      background: #1e8449;
+    }
+
+    .dark-mode .landing button {
+      background: #16a085;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="landing">
+    <h1>☕ Chasquero Coffee</h1>
+    <p>Bienvenido al sistema de gestión de café</p>
+
+    <button onclick="window.location.href='login.html'">
+      Entrar al sistema
+    </button>
+  </div>
+
+</body>
+</html>
