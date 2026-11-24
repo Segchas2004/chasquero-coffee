@@ -52,9 +52,9 @@ Proyecto real: **chasquero-coffee-261013**, Chasquero Coffee - Entrega.
 
 Authentication por correo/contraseña y Firestore Standard están configurados. La cuenta inicial del propietario está habilitada como administrador. La base real no contiene operaciones ficticias. Las reglas bloquean el acceso directo del navegador; las operaciones se ejecutan a través de la API autenticada.
 
-Functions y Hosting están preparados en el código, pero **no se publicaron**. El proyecto sigue sin facturación habilitada. El despliegue de Functions requiere que el propietario habilite un plan compatible con facturación; no se activó ningún pago.
+La web, Functions y las reglas de Firestore se publicaron el **24/11/2026**, después de que el propietario habilitó Blaze. Sitio: https://chasquero-coffee-261013.web.app/ . Acceso al sistema: https://chasquero-coffee-261013.web.app/acceso .
 
-Cuando se decida publicar y esté habilitada la facturación:
+Para publicar actualizaciones con la sesión del propietario:
 
 ```powershell
 npm.cmd exec -- firebase login
@@ -65,7 +65,7 @@ El comando prepara el parámetro de Authentication desde firebase-web-config.jso
 
 ## Pergamino
 
-Rendimientos enteros desde 80 hasta 40. Cada rendimiento tiene una tarifa independiente. En COMPRAS de pergamino se aplica la liquidación confirmada por la empresa; en las demás presentaciones y en ventas se conserva el cálculo por kilo que existía en el sistema, hasta que la empresa indique otra regla.
+Rendimientos enteros desde 80 hasta 40. Cada rendimiento tiene una tarifa independiente. En compras de pergamino y ventas de lotes procedentes de secado se aplica la liquidación por rendimiento. Las demás ventas utilizan la unidad de su tarifa autorizada. La tabla de humedad vigente y los divisores manuales están descritos en REGLAS_PERGAMINO.md.
 
 Peso bruto ÷ divisor de humedad → cortar a dos decimales → multiplicar por precio del rendimiento → descartar céntimos del pago final.
 
@@ -80,8 +80,8 @@ npm.cmd run test:all
 npm.cmd run test:integration:sprint3
 ```
 
-Verificación del 03/11/2026: 59 pruebas generales aprobadas, siete de integración del Sprint 3 aprobadas y diez comprobaciones en navegador aprobadas. TypeScript y compilación web sin errores. La integración comprueba persistencia en Firestore Emulator y usa únicamente registros de prueba propios. Los resultados se conservan en `documentacion/Sprint_03/Evidencias`. Esta comprobación local no acredita un despliegue ni un acceso en una web publicada.
+Verificación del 24/11/2026: 111 pruebas automáticas y compilación aprobadas. Las comprobaciones locales previas incluyen 43 casos de integración y siete de inicio, cierre y recuperación en copias independientes.
 
-Las pruebas de otras entregas siguen disponibles en `test:integration`, `test:access` y `test:reports`; no se suman a la verificación de esta fecha porque no se ejecutaron en esta revisión.
+Las cuatro comprobaciones iniciales del sitio publicado pasaron: web compilada, API con Firebase real, datos y reportes protegidos por sesión y rechazo de escrituras desde otro origen. No equivalen todavía a una prueba de compras o ventas reales con usuarios finales. Los documentos y evidencias se entregan por separado.
 
-Ver ENTREGA.md para el alcance y los pendientes.
+La cuenta inicial de administración permite crear empleados en Usuarios y permisos. Antes de registrar operaciones reales, administración debe cargar las tarifas vigentes y completar la comprobación de los perfiles en el sitio publicado. Ver PREPARACION_ENTREGA_FINAL.md.
