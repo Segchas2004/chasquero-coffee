@@ -1,0 +1,95 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "emulators": {
+    "auth": {
+      "host": "127.0.0.1",
+      "port": 9099
+    },
+    "firestore": {
+      "host": "127.0.0.1",
+      "port": 8085
+    },
+    "ui": {
+      "enabled": false
+    },
+    "singleProjectMode": true
+  },
+  "functions": [
+    {
+      "source": ".",
+      "codebase": "chasquero",
+      "runtime": "nodejs22",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "dist",
+        "tests",
+        "work",
+        "*.zip",
+        ".env*",
+        ".local-runtime.json",
+        ".emulator-data",
+        "firebase-debug.log",
+        "ui-debug.log",
+        "firestore-debug.log",
+        "database-debug.log",
+        "pubsub-debug.log",
+        "backups",
+        "firebase-export-*",
+        ".emulator-data*",
+        ".local-*",
+        "documentacion",
+        "public",
+        "firebase-web-config.json",
+        "ENLACE_RED_LOCAL.txt",
+        "*.docx",
+        "*.pdf",
+        "*.jpg",
+        "*.png"
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "function": {
+          "functionId": "api",
+          "region": "us-central1"
+        }
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          },
+          {
+            "key": "X-Frame-Options",
+            "value": "DENY"
+          }
+        ]
+      }
+    ]
+  }
+}

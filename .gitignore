@@ -1,0 +1,12 @@
+software/node_modules/
+software/dist/
+software/.env*
+!software/.env.example
+software/.emulator-data*/
+software/.local-*
+software/.lan-firewall.json
+software/firebase-web-config.json
+software/backups/
+software/documentacion/
+software/tests/*-results.json
+*.log

@@ -1,0 +1,21 @@
+# Imágenes referenciales de la web pública
+
+La revisión con ocho etapas visualmente distintas utiliza siete escenas nuevas: `cosecha-selectiva.png`, `seleccion-cerezas.png`, `despulpado-cafe.png`, `lavado-cafe.png`, `almacen-cafe.png`, `evaluacion-cafe.png` y `cafe-listo-venta.png`. Herramienta: ImageGen, modo texto a imagen. Prompts exactos en `IMAGENES_ETAPAS_Y_MENU.md`, en la raíz del proyecto.
+
+Recursos adicionales del proceso: `beneficio-del-cafe.png` y `secado-pergamino.png`, generados con ImageGen en modo texto a imagen. Sus prompts y referencias se encuentran en `GUIA_PROCESO_CAFE.md`, en la raíz del proyecto. Son escenas imaginadas, no instalaciones reales identificadas de Chasquero Coffee.
+
+## cafe-de-origen.png
+
+Generada con la herramienta integrada ImageGen, modalidad texto a imagen, para el rediseño visual. Imagen ilustrativa; no documenta un producto real de la empresa.
+
+Use case: photorealistic-natural. Asset type: premium editorial coffee website image. Primary request: A tactile close-up still life of freshly roasted coffee beans spilling naturally across a warm dark walnut tabletop next to a simple handmade ivory ceramic cup of black coffee, soft daylight grazing from the upper left, rich chestnut colors, warm highlights, deep espresso shadows, just a trace of steam. A single small branch with ripe red coffee cherries near the beans ties the story to the farm. Composition landscape 1536x1024, cup on right third, beans foreground and negative dark area at left for an editorial crop. Photographic, sophisticated, natural material textures, restrained color grading, artisanal coffee atmosphere, no latte art, no cafe interior. This is an illustrative image, not documentary evidence of a real branded product. No text, no logos, no watermark, no packages, no certifications or marketing badges.
+
+Generadas con ImageGen, modalidad texto a imagen, el 21/10/2026. No representan una finca identificada ni a productores reales de la empresa. La web lo indica en las imágenes y el pie de página.
+
+## paisaje-cafetalero.png
+
+Use case: photorealistic-natural. Asset type: premium corporate website hero photograph, NOT a UI mockup. Create one extremely polished editorial photograph of a coffee-growing Andean valley evocative of the countryside around Chirinos, San Ignacio, Cajamarca, Peru. It is a representative, imagined landscape, not documentary evidence of an exact real farm. View from a hillside coffee plantation at early morning: foreground natural coffee branches carrying ripe red cherries and textured leaves, middle ground gently cultivated hills and a narrow winding earth path inviting exploration, distant layered blue-brown ridgelines and light morning mist, beautiful warm sun just grazing the valley. No buildings identifying an actual business, no specific landmarks, no people, no invented tourist facilities. Color grade refined and natural: soft warm cream light, rich coffee brown, subtle natural greens, no oversaturated travel-poster treatment. Composition landscape 1536x1024 with clear depth, a luminous upper half and gorgeous coffee-cherry foreground, suitable for a right-hand homepage hero crop. Photographic, believable, tactile, inviting, calm, exceptionally high-end, sharp foreground and atmospheric distance. No text, no watermark, no logos, no infographic, no decorative border.
+
+## manos-y-cafe.png
+
+Use case: photorealistic-natural. Asset type: full-width editorial photograph for a premium Peruvian coffee company website, NOT UI. An intimate, respectful documentary-style close-up of an anonymous coffee producer's naturally weathered hands gently holding a small handful of fresh ripe red coffee cherries. Only forearms and hands, no face or identifying features, no claim to depict a real named producer. Background softly out of focus: coffee branches in a sunlit Andean hillside plantation evocative of Cajamarca Peru. Natural skin texture, genuine imperfect cherries, no studio props, no coffee cup, no sack labels, no fake badges. Warm afternoon light, natural earthy colors, rich brown and burgundy details, premium restrained editorial color grading. Landscape 1536x1024, hands and cherries centered slightly right, photograph wide enough to crop into an editorial card. Invites appreciation of people and origin. No text, no watermark, no logos.

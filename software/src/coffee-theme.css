@@ -1,0 +1,60 @@
+/* Coffee workspace: presentation only. */
+.export-control{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.export-control select{min-height:40px;padding:8px 11px;border:1px solid #e4d2be;border-radius:8px;background:#fffdf9;color:#805a3b;font-size:12px}.table-toolbar>.export-control{margin-left:auto}.report-card .export-control{grid-column:2}.operation-status{display:grid;gap:6px;justify-items:start}.operation-status>small{font-size:10px;color:#90745b}@media(max-width:650px){.table-toolbar>.export-control{margin-left:0;width:100%}.export-control>a{flex:1;justify-content:center}}
+.app-shell,.portal-login,.dialog,.toast,.loading-screen{--forest:#8b512e;--dark:#4b3023;--muted:#7d6b60;--line:#eadfd5;--copper:#b47a47;color:#483429}
+.app-shell{background:#faf7f3}.app-shell .main-shell{background:linear-gradient(135deg,#fffdfb,#f8f2eb)}
+.app-shell .sidebar{background-color:#ecd8c2;background-image:url('/coffee-pattern.svg');background-size:180px;color:#65452f;border-right:1px solid #ddc2a6}
+.app-shell .sidebar-top{background:linear-gradient(180deg,#f2e3d2e6,#ecd8c200)}
+.app-shell .brand{color:#503222}.app-shell .brand small{color:#805d44}.app-shell .brand-mark{background:#ffffffa6;color:#8f5b35;border-color:#b98a63;box-shadow:0 4px 12px #8b512e0b}
+.app-shell .workspace-tag{color:#795337}.app-shell .workspace-tag>span{background:#a16b3e}
+.app-shell .nav-label{color:#82634e;font-weight:600;letter-spacing:1.8px}.app-shell .nav-link{color:#65462f;font-weight:500}
+.app-shell .nav-link svg{color:#91603b}.app-shell .nav-link:hover{background:#fff9f1b8;color:#56351f}
+.app-shell .nav-link.active{background:#fffdf8;color:#673a20;box-shadow:inset 3px 0 #9b6138,0 4px 14px #744b2610}
+.app-shell .nav-link.active svg{color:#9a6035}.app-shell .nav-link.active i{background:#ad7547}
+.app-shell .origin-note{border-color:#c9a78199}.app-shell .origin-note>svg{color:#99653e}.app-shell .origin-note p{color:#67432b}.app-shell .origin-note small{color:#866345}
+.app-shell .user-block{border-color:#c9a78199}.app-shell .user-block strong{color:#563924}.app-shell .user-block small{color:#806045}
+.app-shell .logout{color:#8f623e}.app-shell .logout:hover{background:#fff5e6}.app-shell .avatar{background:#b58155;color:white}.app-shell .avatar.pale{background:#f5e8d7;color:#8c5b35}
+.app-shell .topbar{background:#ffffffed;border-color:#eadfd5}.app-shell .breadcrumb{color:#8c786a}.app-shell .breadcrumb>a{color:#79543a}.app-shell .breadcrumb>span{color:#584031}
+.app-shell .icon-button{color:#926e51}.app-shell .icon-button:hover{background:#f5e9dc;color:#704426}.app-shell .environment-badge{background:#faf0e3;border-color:#ead8c1;color:#8a643d}.app-shell .environment-badge>span,.app-shell .live-dot{background:#b47a47}
+.app-shell .welcome-banner,.app-shell .welcome-banner.gerente,.app-shell .welcome-banner.trabajador{background:linear-gradient(110deg,#f3dfc7 0%,#efd1ab 62%,#e4b983 100%);color:#4f311e;border:1px solid #dfbc94;box-shadow:0 6px 24px #9d6a3610;min-height:188px}
+.app-shell .welcome-banner:before{width:450px;height:260px;right:0;top:-25px;background:url('/coffee-workspace.svg') right center/contain no-repeat;border:0;border-radius:0;box-shadow:none}
+.app-shell .welcome-banner h1{color:#50301e;font-weight:600}.app-shell .welcome-banner p{color:#785236;max-width:540px}.app-shell .welcome-kicker{color:#88603c}.app-shell .welcome-kicker>span{background:#a96d3b}
+.app-shell .welcome-seal{color:#754823;background:#fff8ed91;border:1px solid #ffffffa6;border-radius:18px;padding:19px 16px;min-width:125px;backdrop-filter:blur(3px)}
+.app-shell .control-metric,.app-shell .stat-card{border-color:#eadfd5;background:#fff;box-shadow:0 4px 18px #8a5a2d06}
+.app-shell .metric-symbol,.app-shell .stat-icon,.app-shell .action-icon{background:#f5e8d8;color:#a06b3f;border-color:#e8d0b4}
+.app-shell .control-metric strong,.app-shell .stat-card>strong,.app-shell .mini-stats strong,.app-shell .donut-label strong{color:#7c4c2c}
+.app-shell .control-metric>div>span,.app-shell .stat-card>div{color:#80644f}.app-shell .control-metric small,.app-shell .stat-card>small{color:#89786a}
+.app-shell .worker-action,.app-shell .admin-action{background:#fff;border-color:#e7d6c5;color:#503a2b}
+.app-shell .worker-action{background-image:linear-gradient(120deg,#fff 70%,#fcf7ef);position:relative;overflow:hidden}
+.app-shell .worker-action:after{content:'';position:absolute;right:-11px;top:-6px;width:100px;height:100px;background:url('/coffee-pattern.svg') center/160px;opacity:.65;pointer-events:none}
+.app-shell .worker-action:hover,.app-shell .admin-action:hover{border-color:#c39468;box-shadow:0 8px 26px #8b512e13}
+.app-shell .worker-action>svg{color:#af784a}.app-shell .worker-action h2{color:#5c3d26}.app-shell .worker-action p{color:#8a7361}.app-shell .worker-action>span{color:#955c32}
+.app-shell .admin-action.featured{background:linear-gradient(125deg,#fbf0e2,#ecd0ad)}.app-shell .admin-action h2,.app-shell .section-label h2{color:#513829}.app-shell .admin-action p{color:#84674f}.app-shell .admin-action strong{color:#88512d}
+.app-shell .price-preview{border-color:#d6b691;background:#fffcf5c4}.app-shell .price-preview span{color:#87684d}.app-shell .price-preview b{color:#784724}
+.app-shell .working-note{background:#f6eadb;border:1px solid #ead5bd}.app-shell .working-note>svg{color:#a87745}.app-shell .working-note h2{color:#79502e}.app-shell .working-note p{color:#886d54}
+.app-shell .card{background:#fff;border-color:#eadfd5;box-shadow:0 4px 19px #8a5a2d04}.app-shell .card-heading{border-color:#eee4db}.app-shell .card-heading h2,.app-shell .page-heading h1{color:#503727}
+.app-shell .eyebrow{color:#a06d43}.app-shell .page-heading p,.app-shell .muted,.app-shell .cell-secondary,.app-shell .card-heading p,.app-shell .record-person small,.app-shell .record-link small,.app-shell .subtle-note,.app-shell .app-footer,.app-shell .overview-tools>span{color:#877362}
+.app-shell .text-link,.app-shell .record-link,.app-shell .chart-foot a,.app-shell .attention-link{color:#945c34}.app-shell .green-text{color:#916134}
+.app-shell .button.primary,.portal-login .button.primary,.dialog .button.primary{background:#9a6038;border-color:#9a6038;color:white;box-shadow:0 4px 10px #8b512e16}
+.app-shell .button.primary:hover,.portal-login .button.primary:hover,.dialog .button.primary:hover{background:#7e4927;border-color:#7e4927}
+.app-shell .button:not(.primary):not(.danger):not(.danger-quiet),.dialog .button:not(.primary):not(.danger):not(.danger-quiet){background:#fff;border-color:#e5d4c2;color:#795337}
+.app-shell .button:not(.primary):not(.danger):hover{background:#fbf0e3}
+.app-shell .badge.green,.dialog .badge.green{background:#f2e4d1;color:#80542d}.app-shell .badge.amber,.dialog .badge.amber{background:#fff0d5;color:#9a6928}
+.app-shell .coffee-type,.app-shell .coffee-type.pergamino{background:#f2e3cd;color:#a77645}.app-shell .coffee-type.verde{background:#eee4d6;color:#866543}.app-shell .coffee-type.tostado{background:#ebd2b8;color:#936038}.app-shell .coffee-type.molido{background:#e9dcd0;color:#866347}
+.app-shell .filter-tabs button.active,.app-shell .price-stage-tabs button.active{background:#9c633c;border-color:#9c633c;color:white}.app-shell .filter-tabs button,.app-shell .price-stage-tabs button{border-color:#e4d5c6;color:#806044}
+.app-shell .price-notice{background:#fbf0e2;border-color:#ecd6bb;color:#8d5c31}.app-shell .price-notice p{color:#8b735a}.app-shell .price-amount{color:#83512c}.app-shell .filter-caption{color:#8d6c4e}
+.app-shell .table-note{background:#fcf8f2;border-color:#eee2d6;color:#8a7562}.app-shell .table-toolbar,.app-shell .pagination{border-color:#eee2d6}.app-shell th{background:#fbf7f1;color:#8b7058}.app-shell td{border-color:#f1e7dd}.app-shell tbody tr:hover{background:#fffaf3}
+.app-shell .search-field{background:#fff;border-color:#e5d8cb;color:#a38367}.app-shell .table-toolbar>select,.app-shell .range-picker,.app-shell .compact-select,.app-shell .audit-filters{border-color:#e5d8cb;background:#fff;color:#78563a}
+.app-shell .stock-legend>div,.app-shell .chart-legend,.app-shell .chart-foot,.app-shell .pagination{color:#8b7663}.app-shell .chart-foot,.app-shell .balance-strip{background:#fcf8f2;border-color:#eee2d6}.app-shell .all-clear{color:#a87745}
+.app-shell .permission-grid>div,.app-shell .settings-info{background:#fcf6ed;border-color:#ead7c1}.app-shell .permission-grid svg{color:#b78450}.app-shell .permission-grid h3,.app-shell .report-card h2,.app-shell .settings-info h3,.app-shell .company-card h2{color:#80532f}.app-shell .permission-grid p,.app-shell .settings-info p,.app-shell .report-card p,.app-shell .company-card p{color:#8b735c}
+.app-shell .report-icon,.app-shell .company-symbol,.app-shell .process-route>div>span,.app-shell .record-icon.positive{background:#f5e8d7;color:#ac7748}
+.dialog{background:#fff;color:#503929;border-color:#ead7c3}.dialog .dialog-heading{border-color:#eadfd5}.dialog .dialog-heading h2{color:#69452b}.dialog .field>span{color:#73533c}.dialog .field input,.dialog .field select,.dialog .field textarea{background:#fffdf9;border-color:#e3d3c2;color:#5c4030}.dialog .field small{color:#8b7562}
+.dialog .form-summary{background:#faf0e1;border-color:#e5cba9}.dialog .form-summary>span,.dialog .form-summary>small{color:#89623c}.dialog .form-summary>strong,.dialog .detail-amount>strong,.dialog .detail-grid dd{color:#89542c}.dialog .detail-grid dt{color:#94775b}.dialog .icon-button{color:#9b7755}
+.portal-login{background:#fcf8f3}.portal-login .portal-form-side{background:linear-gradient(145deg,#fffdfb,#fbf2e6)}.portal-login .portal-brand,.portal-login .portal-content h1{color:#674027}.portal-login .portal-brand small,.portal-login .portal-content .eyebrow{color:#a17c55}
+.portal-login .portal-brand .brand-mark{background:#f5e6d2;border-color:#c69c6b;color:#a67542}.portal-login .portal-content h1 em{color:#b7814b}.portal-login .portal-content>p,.portal-login .portal-choice small,.portal-login .portal-security{color:#8d735e}
+.portal-login .portal-choice{background:#fff;border-color:#e6d4bf}.portal-login .portal-choice:hover{border-color:#bc8a57;box-shadow:0 6px 22px #8b512e12}.portal-login .portal-choice strong{color:#68452b}.portal-login .portal-choice>svg{color:#ad7d4c}
+.portal-login .portal-icon,.portal-login .portal-icon.trabajador,.portal-login .portal-icon.gerente{background:#f6e8d5;color:#aa7644}.portal-login .portal-tabs{background:#f4e6d4;border-color:#ead5bb}.portal-login .portal-tabs>a{color:#9a7754}.portal-login .portal-tabs>a.active{color:#83522e;background:#fffdf9}
+.portal-login .portal-photo{background:#58371f}.portal-login .portal-photo-overlay{background:linear-gradient(180deg,#603d2244,transparent 35%,#4b2e1bef)}.portal-login .field input{background:#fff;border-color:#e7d5bf;color:#68442b}.portal-login .field>span,.portal-login .back-to-profiles{color:#8d643f}.portal-login .practice-access{background:#fbf0e0;border-color:#ead3b5;color:#8d653c}
+.loading-screen{background:#faf3e9;color:#9b673d}.toast{background:#fffdf8;border-color:#e7cbaa;color:#86562f}.toast>svg{color:#ae7843}
+.app-shell a:focus-visible,.app-shell button:focus-visible,.dialog :is(button,input,textarea,select):focus-visible,.portal-login :is(a,button,input):focus-visible{outline-color:#b47a47}
+@media(max-width:900px){.app-shell .welcome-banner:before{right:-50px;opacity:.6}.app-shell .welcome-seal{padding:14px;min-width:100px}}
+@media(max-width:650px){.app-shell .welcome-banner{min-height:174px}.app-shell .welcome-banner:before{right:-160px;opacity:.35}.app-shell .welcome-banner h1{max-width:95%}.app-shell .welcome-banner p{max-width:95%}}
