@@ -2,7 +2,7 @@ import test, { after } from 'node:test';
 import assert from 'node:assert/strict';
 process.env.CHASQUERO_ENV = 'production';
 process.env.GCLOUD_PROJECT = 'demo-chasquero-coffee';
-delete process.env.FIREBASE_WEB_API_KEY;
+delete process.env.CHASQUERO_WEB_API_KEY;
 const { app } = await import('../server/index.mjs');
 const server = app.listen(0, '127.0.0.1');
 await new Promise(resolve => server.once('listening', resolve));

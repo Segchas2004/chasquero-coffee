@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 const project=JSON.parse(fs.readFileSync(new URL('../.firebaserc',import.meta.url),'utf8')).projects.default;
-let apiKey=process.env.FIREBASE_WEB_API_KEY;
+let apiKey=process.env.CHASQUERO_WEB_API_KEY || process.env.FIREBASE_WEB_API_KEY;
 const configFile=new URL('../firebase-web-config.json',import.meta.url);
 if(!apiKey && fs.existsSync(configFile)){
   const config=JSON.parse(fs.readFileSync(configFile,'utf8'));
@@ -33,5 +33,5 @@ if(!apiKey){
   if(!apiKey)throw new Error('No se pudo recuperar la configuración web. Inicia sesión en Firebase CLI y revisa el proyecto.');
 }
 if(!/^[A-Za-z0-9_-]+$/.test(apiKey))throw new Error('La configuración de Authentication no es válida.');
-fs.writeFileSync(new URL('../.env.'+project,import.meta.url),'FIREBASE_WEB_API_KEY='+apiKey+'\n');
+fs.writeFileSync(new URL('../.env.'+project,import.meta.url),'CHASQUERO_WEB_API_KEY='+apiKey+'\n');
 console.log('Parámetro de Authentication preparado para Functions.');

@@ -36,8 +36,8 @@ app.post('/api/login', async (req, res) => {
   let count = attempts.get(key);
   if (!count || now - count.at > 15 * 60 * 1000) { count = { at: now, failures: 0 }; attempts.set(key, count); }
   if (count.failures >= 20) return res.status(429).json({ error: 'Demasiados intentos. Espera 15 minutos antes de volver a ingresar.' });
-  if (production && !process.env.FIREBASE_WEB_API_KEY) return res.status(503).json({ error: 'El acceso aún no está configurado.' });
-  const authUrl = production ? `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env.FIREBASE_WEB_API_KEY}` : `http://127.0.0.1:${localConfig.authPort}/identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=local-demo-key`;
+  if (production && !process.env.CHASQUERO_WEB_API_KEY) return res.status(503).json({ error: 'El acceso aún no está configurado.' });
+  const authUrl = production ? `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env.CHASQUERO_WEB_API_KEY}` : `http://127.0.0.1:${localConfig.authPort}/identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=local-demo-key`;
   const response = await fetch(authUrl, {
     method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email: req.body.email, password: req.body.password, returnSecureToken: true }),
